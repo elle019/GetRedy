@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navmenu_color"
+    tools:context=".ProgressActivity">
+
+    <TextView
+        android:id="@+id/progresstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Progress"
+        android:textSize="20dp"
+        android:paddingTop="25dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/chelsea_market"
+        android:textColor="@color/white"
+        />
+
+    <ImageView
+        android:id="@+id/isometric_forest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progresstext"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/progress_iso" />
+
+    <TextView
+        android:id="@+id/ftdtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/isometric_forest"
+        android:layout_centerInParent="true"
+        android:paddingTop="25dp"
+        android:text="Focus Time Distribution"
+        android:textColor="@color/white"
+        android:fontFamily="@font/amiko"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/ftdtext"
+        android:layout_centerInParent="true"
+        android:paddingBottom="30dp"
+        android:src="@drawable/yellow_pastel" />
+
+
+</RelativeLayout>

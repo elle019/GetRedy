@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/lalab_orange"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            app:srcCompat="@drawable/baseline_close_24" />
+
+        <TextView
+            android:id="@+id/text_dialog_1"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="200dp"
+            android:gravity="center"
+            android:text="Kamatis (Tomato)"
+            android:fontFamily="@font/chelsea_market"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/char1design"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/kamatis" />
+
+        <TextView
+            android:id="@+id/text_dialog_2"
+            android:layout_width="296dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="160dp"
+            android:gravity="center"
+            android:fontFamily="@font/amiko"
+            android:text="Kamatis is an optimistic fruit who is"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/text_dialog_3"
+            android:layout_width="296dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="200dp"
+            android:gravity="center"
+            android:fontFamily="@font/amiko"
+            android:text="determined to help their siblings from"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/text_dialog_4"
+            android:layout_width="296dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="250dp"
+            android:gravity="center"
+            android:fontFamily="@font/amiko"
+            android:text="the veggienappers."
+            android:textColor="@color/black"
+            android:paddingBottom="15dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

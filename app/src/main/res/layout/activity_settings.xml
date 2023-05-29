@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/navmenu_color"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="25dp"
+        android:text="Settings"
+        android:textAlignment="center"
+        android:fontFamily="@font/chelsea_market"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notifications"
+        android:textSize="15dp"
+        android:paddingTop="25dp"
+        android:paddingBottom="15dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableRight="@drawable/baseline_toggle_off_24"
+        android:text="Countdown notification"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Sound Effect"
+        android:drawableRight="@drawable/baseline_toggle_off_24"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Planting Reminder"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Language"
+        android:textSize="15dp"
+        android:paddingTop="25dp"
+        android:paddingBottom="10dp"
+        android:layout_marginStart="35dp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Change Language"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="English"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Music"
+        android:textSize="15dp"
+        android:paddingTop="25dp"
+        android:layout_marginStart="35dp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Ambience"
+        android:drawableRight="@drawable/baseline_volume_off_24"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Theme"
+        android:textSize="15dp"
+        android:paddingTop="25dp"
+        android:layout_marginStart="35dp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Dark mode"
+        android:drawableRight="@drawable/baseline_toggle_off_24"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Font"
+        android:textSize="15dp"
+        android:paddingTop="25dp"
+        android:layout_marginStart="35dp"
+        android:textColor="@color/white"
+        />
+</LinearLayout>

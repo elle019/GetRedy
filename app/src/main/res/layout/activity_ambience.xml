@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navmenu_color"
+    tools:context=".AmbienceActivity">
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ambience"
+        android:textSize="20dp"
+        android:paddingTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/chelsea_market"
+        android:textColor="@color/white"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/amb1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="left"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/forest_totoro" />
+    <TextView
+        android:id="@+id/amb1text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forest"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_below="@id/amb1"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/amiko"
+        android:layout_marginStart="60dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/amb2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@+id/amb1"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/rain_amb" />
+    <TextView
+        android:id="@+id/amb2text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rain"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/amb1text"
+        android:layout_below="@id/amb2"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/amiko"
+        android:layout_marginStart="95dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/amb3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@+id/amb2"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/howl_fireplace" />
+
+    <TextView
+        android:id="@+id/amb3text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fireplace"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/amb2text"
+        android:layout_below="@id/amb3"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/amiko"
+        android:layout_marginStart="90dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/amb4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/amb1"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/coffee" />
+
+    <TextView
+        android:id="@+id/amb4text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coffee"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_below="@id/amb4"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/amiko"
+        android:layout_marginStart="60dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/amb5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/amb2"
+        android:layout_toRightOf="@+id/amb4"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/instrumental" />
+
+    <TextView
+        android:id="@+id/amb5text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amb5"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/amb4text"
+        android:text="Instrumental"
+        android:textColor="@color/white"
+        android:fontFamily="@font/amiko"
+        android:textSize="12sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/amb6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/amb3"
+        android:layout_toRightOf="@+id/amb5"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/music_note" />
+    <TextView
+        android:id="@+id/amb6text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/amb2text"
+        android:layout_below="@id/amb6"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="112dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/amb7"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/amb4"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/music_note" />
+
+    <TextView
+        android:id="@+id/amb7text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amb7"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/amb8"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/amb5"
+        android:layout_toRightOf="@+id/amb7"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/music_note" />
+    <TextView
+        android:id="@+id/amb8text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amb8"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/amb7text"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/amb9"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/amb6"
+        android:layout_toRightOf="@+id/amb8"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/music_note" />
+    <TextView
+        android:id="@+id/amb9text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/amb2text"
+        android:layout_below="@id/amb9"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="112dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/amb10"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/amb7"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/music_note" />
+    <TextView
+        android:id="@+id/amb10text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amb10"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="10dp"
+
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/amb11"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/amb8"
+        android:layout_toRightOf="@+id/amb10"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/music_note" />
+
+    <TextView
+        android:id="@+id/amb11text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amb11"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/amb7text"
+
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/amb12"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/amb9"
+        android:layout_toRightOf="@+id/amb11"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/music_note"/>
+    <TextView
+        android:id="@+id/amb12text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/amb2text"
+        android:layout_below="@id/amb12"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginBottom="40dp"/>
+
+
+
+</RelativeLayout>

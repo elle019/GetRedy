@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navmenu_color"
+    tools:context=".HelpActivity">
+
+    <TextView
+        android:id="@+id/helptext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Help"
+        android:textSize="20dp"
+        android:paddingTop="25dp"
+        android:fontFamily="@font/chelsea_market"
+        android:textColor="@color/white"
+        />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Timer Tutorial"
+        android:backgroundTint="@color/mint_green"
+        android:textColor="@color/black"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="80dp"
+        android:fontFamily="@font/chelsea_market"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="80dp"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login Tutorial"
+        android:backgroundTint="@color/mint_green"
+        android:textColor="#000000"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="80dp"
+        android:fontFamily="@font/chelsea_market"
+        android:layout_below="@+id/btn"/>
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Progress Tutorial"
+        android:backgroundTint="@color/mint_green"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="80dp"
+        android:textColor="#000000"
+        android:layout_marginEnd="80dp"
+        android:fontFamily="@font/chelsea_market"
+        android:layout_below="@+id/btn2"
+        />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nav App Tutorial"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btn3"
+        android:backgroundTint="@color/mint_green"
+        android:textColor="#000000"
+        android:layout_marginStart="80dp"
+        android:fontFamily="@font/chelsea_market"
+        android:layout_marginEnd="80dp"/>
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn4"
+        android:backgroundTint="@color/mint_green"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:text="Characters Tutorial"
+        android:fontFamily="@font/chelsea_market"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"/>
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Task Tutorial"
+        android:backgroundTint="@color/mint_green"
+        android:layout_below="@id/btn5"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="80dp"
+        android:fontFamily="@font/chelsea_market"
+        android:layout_marginEnd="80dp"/>
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saved Progress Tutorial"
+        android:layout_below="@id/btn6"
+        android:backgroundTint="@color/mint_green"
+        android:textColor="#000000"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/chelsea_market"
+        android:layout_marginEnd="80dp"/>
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ambience Tutorial"
+        android:layout_below="@id/btn7"
+        android:backgroundTint="@color/mint_green"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:layout_marginStart="80dp"
+        android:fontFamily="@font/chelsea_market"
+        android:layout_marginEnd="80dp"/>
+
+</RelativeLayout>

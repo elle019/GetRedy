@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn ="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="Home"/>
+        <item
+            android:id="@+id/nav_character"
+            android:icon="@drawable/character_icon"
+            android:title="Character"/>
+        <item
+            android:id="@+id/nav_ambience"
+            android:icon="@drawable/ambience_icon"
+            android:title="Ambience"/>
+        <item
+            android:id="@+id/nav_task"
+            android:icon="@drawable/task_icon"
+            android:title="To do List"/>
+        <item
+            android:id="@+id/nav_progress"
+            android:icon="@drawable/progress_icon"
+            android:title="Progress"/>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings_icon"
+            android:title="Settings"/>
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/help_icon"
+            android:title="Help"/>
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout_icon"
+            android:title="Logout"/>
+    </group>
+</menu>
+
