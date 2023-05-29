@@ -1,6 +1,16 @@
 <resources>
     <string name="app_name">Get Red-y!</string>
+
+    <string name="tapAnywhereText">Tap Anywhere to Continue</string>
+
     <string name="menu_drawer_open">Drawer Open</string>
     <string name="menu_drawer_close">Drawer Close</string>
 
+    <string name="startTimerButtonLabel">Red-y!</string>
+    <string name="stopTimerButtonLabel">Stop</string>
+
+    <string name="defaultTimerValue">5:00</string>
+
+    <string name="appSharedPrefFile">Get_Redy_SharedPref</string>
+    <string name="sharedPrefIsLoggedInKey">isLoggedIn</string>
 </resources>

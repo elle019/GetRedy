@@ -107,6 +107,6 @@ public class CharacterActivity extends DrawerBaseActivity {
         dialog_characters.show();
     }
 
-    }
+}
 
 

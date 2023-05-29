@@ -22,11 +22,16 @@ public class OptionModeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_option_mode);
+
         Button normal_mode_button = (Button) findViewById(R.id.button_normalmode);
         Button story_mode_button = (Button) findViewById(R.id.button_storymode);
+
+        proceed_dialog = new Dialog(OptionModeActivity.this);
 
         normal_mode_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +46,7 @@ public class OptionModeActivity extends AppCompatActivity {
             }
         });
     }
+
     //Does not work.
     private void Normal_Mode() {
         proceed_dialog.setContentView(R.layout.normal_mode_dialog);
@@ -80,6 +86,7 @@ public class OptionModeActivity extends AppCompatActivity {
             }
         });
         proceed_dialog.show();
+
         no1_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

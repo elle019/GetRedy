@@ -42,7 +42,7 @@
      android:layout_above="@id/slider_circle"
      android:layout_marginBottom="30dp"
      android:layout_centerInParent="true"
-     android:text="05:00"
+     android:text="@string/defaultTimerValue"
      android:textColor="@color/white"
      android:textSize="40dp" />
 
@@ -59,7 +59,7 @@
      android:background="@drawable/custom_button_signing"
      android:backgroundTint="@color/tomato_red"
      android:padding="10dp"
-     android:text="Red-y!"
+     android:text="@string/startTimerButtonLabel"
      android:textColor="@color/white"
      android:textSize="17dp"
      android:onClick="timer_starts"/>
@@ -69,7 +69,7 @@
      android:layout_width="185dp"
      android:layout_height="185dp"
      android:layout_centerInParent="true"
-     android:layout_marginEnd="113dp"/>
+     android:layout_marginEnd="113dp" />
 
 
 </RelativeLayout>
