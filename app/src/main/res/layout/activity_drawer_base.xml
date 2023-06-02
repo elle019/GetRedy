@@ -13,16 +13,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
-   <com.google.android.material.navigation.NavigationView
-       android:layout_width="wrap_content"
-       android:layout_height="match_parent"
-       android:fitsSystemWindows="true"
-       android:layout_gravity="start"
-       android:id="@+id/nav_view"
-       app:itemTextColor="@color/mint_green"
-       app:itemIconTint="@color/mint_green"
-       app:headerLayout="@layout/main_drawer_header"
-       app:menu="@menu/main_menu_drawer"/>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#D9E8766F"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/main_drawer_header"
+        app:itemIconTint="@color/mint_green"
+        app:itemTextColor="@color/mint_green"
+        app:menu="@menu/main_menu_drawer" />
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

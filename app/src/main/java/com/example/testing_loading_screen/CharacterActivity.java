@@ -35,9 +35,11 @@ public class CharacterActivity extends DrawerBaseActivity {
         activityCharacterBinding = ActivityCharacterBinding.inflate(getLayoutInflater());
         setContentView(activityCharacterBinding.getRoot());
         allocateActivityTitle("Character");
+
         CircleImageView char_kam = (CircleImageView) findViewById(R.id.char1);
         CircleImageView char_sin = (CircleImageView) findViewById(R.id.char2);
         CircleImageView char_lock = (CircleImageView) findViewById(R.id.char4);
+
         dialog_characters = new Dialog(this);
         char_kam.setOnClickListener(new View.OnClickListener() {
             @Override

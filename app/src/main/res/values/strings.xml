@@ -13,4 +13,13 @@
 
     <string name="appSharedPrefFile">Get_Redy_SharedPref</string>
     <string name="sharedPrefIsLoggedInKey">isLoggedIn</string>
+
+    <string name="dialog_title_text_placeholder">Dialog Title</string>
+    <string name="dialog_content_text_placeholder">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet pellentesque orci, non commodo ipsum finibus. \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="dialog_close_button_description">Dialog close button</string>
+    <string name="dialog_yes_button_label">Yes</string>
+    <string name="dialog_no_button_label">No</string>
+
+    <string name="dialog_normal_mode_text">This mode does not use coins. \nYou have to finish a chapter to \nunlock characters. \n\nDo you wish to proceed?</string>
+    <string name="dialog_story_mode_text">Just your ordinary timer. \nThis mode uses coins to \nunlock characters. \n\nDo you wish to proceed?</string>
 </resources>

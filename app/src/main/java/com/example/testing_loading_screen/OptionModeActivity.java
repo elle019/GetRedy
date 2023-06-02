@@ -4,20 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.ImageView;
+
+import com.example.testing_loading_screen.getready_dialogs.GetRedyTextDialog;
 
 public class OptionModeActivity extends AppCompatActivity {
 
-
-    Dialog proceed_dialog;
-
+    Button normalModeButton, storyModeButton;
+    GetRedyTextDialog normalModeDialog, storyModeDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,71 +25,34 @@ public class OptionModeActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_option_mode);
 
-        Button normal_mode_button = (Button) findViewById(R.id.button_normalmode);
-        Button story_mode_button = (Button) findViewById(R.id.button_storymode);
+        normalModeButton = (Button) findViewById(R.id.button_normalmode);
+        storyModeButton = (Button) findViewById(R.id.button_storymode);
 
-        proceed_dialog = new Dialog(OptionModeActivity.this);
+        normalModeDialog = new GetRedyTextDialog(OptionModeActivity.this);
+        normalModeDialog.setupDialog("Normal Mode", getString(R.string.dialog_normal_mode_text));
+        normalModeDialog.setOnSubmit(() -> {
+            startActivity(new Intent(OptionModeActivity.this, MainActivity.class));
+            finish();
 
-        normal_mode_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Normal_Mode();
-            }
-        });
-        story_mode_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               Story_mode();
-            }
-        });
-    }
-
-    //Does not work.
-    private void Normal_Mode() {
-        proceed_dialog.setContentView(R.layout.normal_mode_dialog);
-        proceed_dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        proceed_dialog.show();
-        Button yes_button = proceed_dialog.findViewById(R.id.btn_yes);
-        Button no_button = proceed_dialog.findViewById(R.id.btn_no);
-
-        yes_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent_normal_mode = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent_normal_mode);
-            }
+            return null;
         });
 
-        no_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                proceed_dialog.dismiss();
-            }
+        storyModeDialog = new GetRedyTextDialog(OptionModeActivity.this);
+        storyModeDialog.setupDialog("Story Mode", getString(R.string.dialog_story_mode_text));
+        storyModeDialog.setOnSubmit(() -> {
+            startActivity(new Intent(OptionModeActivity.this, MainActivity.class));
+            finish();
+
+            return null;
         });
     }
 
-    private void Story_mode() {
-        proceed_dialog.setContentView(R.layout.story_mode_dialog);
-        proceed_dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        proceed_dialog.show();
-        Button yes1_button = proceed_dialog.findViewById(R.id.btn_yes);
-        Button no1_button = proceed_dialog.findViewById(R.id.btn_no);
+    @Override
+    protected void onStart() {
+        super.onStart();
 
-        yes1_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent_story_mode = new Intent(getApplicationContext(),MainActivity.class);
-                startActivity(intent_story_mode);
-            }
-        });
-        proceed_dialog.show();
+        normalModeButton.setOnClickListener(view -> normalModeDialog.show());
 
-        no1_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                proceed_dialog.dismiss();
-            }
-        });
-        proceed_dialog.show();
+        storyModeButton.setOnClickListener(view -> storyModeDialog.show());
     }
 }

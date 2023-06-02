@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/navmenu_color"
 
     >
 
@@ -15,25 +13,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="4dp"
-        android:src="@drawable/singkamas_sample1"/>
-
-
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/profilepic"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="12dp"
-        android:fontFamily="@font/amiko"
-        android:text="Singkamas"
-        android:textSize="15sp"
-        android:textStyle="bold" />
-    <View
-        android:layout_below="@+id/name"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+        android:src="@drawable/singkamas_sample1" />
 
 
 </RelativeLayout>

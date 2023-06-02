@@ -15,8 +15,11 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.testing_loading_screen.databinding.ActivityMainBinding;
+
+import org.w3c.dom.Text;
 
 import java.util.Locale;
 
@@ -30,7 +33,7 @@ public class MainActivity extends DrawerBaseActivity{
     Button redy_button;
     CountDownTimer countdown;
     Boolean counterIsActive = false;
-    TextView time_preset;
+    TextView timePreset;
     MediaPlayer mediaPlayer;
     AnimationDrawable tomato_animation;
     Dialog dialog_set_a_time;
@@ -58,7 +61,7 @@ public class MainActivity extends DrawerBaseActivity{
         slider_circle.setMax(3900);
         slider_circle.setProgress(defaultSliderCircleValue);
 
-        time_preset = findViewById(R.id.time_preset);
+        timePreset = findViewById(R.id.time_preset);
         redy_button = findViewById(R.id.redy_button);
 
         mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.chime);
@@ -93,7 +96,7 @@ public class MainActivity extends DrawerBaseActivity{
         int sec = progress % 60;
 
         slider_circle.setProgress(progress);
-        time_preset.setText(String.format(Locale.getDefault(), "%02d:%02d", min, sec));
+        timePreset.setText(String.format(Locale.getDefault(), "%02d:%02d", min, sec));
     }
 
     public void timer_starts(View view) {
@@ -164,7 +167,7 @@ public class MainActivity extends DrawerBaseActivity{
     }
 
     private void reset() {
-        time_preset.setText(R.string.defaultTimerValue);
+        timePreset.setText(R.string.defaultTimerValue);
         slider_circle.setProgress(defaultSliderCircleValue);
         countdown.cancel();
         redy_button.setText(R.string.startTimerButtonLabel);

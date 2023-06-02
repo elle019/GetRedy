@@ -14,6 +14,8 @@ import android.widget.Toast;
 
 public class LoginRegisterActivity extends AppCompatActivity {
 
+    Button loginButton, signinButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,29 +25,29 @@ public class LoginRegisterActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_login_register);
 
-        Button logIn = (Button) findViewById(R.id.button_login);
-        Button signIn = (Button) findViewById(R.id.button_sign);
+        loginButton = (Button) findViewById(R.id.button_login);
+        signinButton = (Button) findViewById(R.id.button_sign);
+    }
 
-        logIn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                SharedPreferences sharedPref = getSharedPreferences(getString(R.string.appSharedPrefFile), Context.MODE_PRIVATE);
-                SharedPreferences.Editor editor = sharedPref.edit();
-                editor.putBoolean(getString(R.string.sharedPrefIsLoggedInKey), true);
-                editor.apply();
+    @Override
+    protected void onStart() {
+        super.onStart();
 
-                Intent intent_login = new Intent(getApplicationContext(), OptionModeActivity.class);
-                startActivity(intent_login);
+        loginButton.setOnClickListener(v -> {
+            SharedPreferences sharedPref = getSharedPreferences(getString(R.string.appSharedPrefFile), Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedPref.edit();
+            editor.putBoolean(getString(R.string.sharedPrefIsLoggedInKey), true);
+            editor.apply();
 
-                finish();
-            }
+            Intent intent_login = new Intent(getApplicationContext(), OptionModeActivity.class);
+            startActivity(intent_login);
+
+            finish();
         });
-        signIn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent signInActivity = new Intent(getApplicationContext(), OptionModeActivity.class);
-                startActivity(signInActivity);
-            }
+
+        signinButton.setOnClickListener(v -> {
+            Intent signInActivity = new Intent(getApplicationContext(), OptionModeActivity.class);
+            startActivity(signInActivity);
         });
     }
 }

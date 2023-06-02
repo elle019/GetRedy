@@ -7,7 +7,9 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -42,6 +44,7 @@ public class DrawerBaseActivity extends AppCompatActivity implements NavigationV
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         drawerLayout.closeDrawer(GravityCompat.START);
+        
         switch(item.getItemId()){
             case R.id.nav_home:
                 startActivity(new Intent(this, MainActivity.class));
@@ -72,10 +75,17 @@ public class DrawerBaseActivity extends AppCompatActivity implements NavigationV
                 overridePendingTransition(0,0);
                 break;
             case R.id.nav_logout:
+                SharedPreferences sharedPref = getSharedPreferences(getString(R.string.appSharedPrefFile), Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPref.edit();
+                editor.putBoolean(getString(R.string.sharedPrefIsLoggedInKey), false);
+                editor.apply();
+
                 startActivity(new Intent(this, LoginRegisterActivity.class));
                 overridePendingTransition(0,0);
                 break;
         }
+
+        finish();
         return false;
     }
 
