@@ -1,6 +1,7 @@
 package com.example.testing_loading_screen;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.content.res.AppCompatResources;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -14,6 +15,7 @@ import android.view.WindowManager;
 import com.example.testing_loading_screen.databinding.ActivityCharacterBinding;
 import com.example.testing_loading_screen.databinding.ActivityDashboardBinding;
 import com.example.testing_loading_screen.databinding.KamatisDialogBinding;
+import com.example.testing_loading_screen.getready_dialogs.GetRedyCharacterDialog;
 
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -25,7 +27,7 @@ public class CharacterActivity extends DrawerBaseActivity {
 
     ActivityCharacterBinding activityCharacterBinding;
 
-    Dialog dialog_characters;
+    CircleImageView char_kam, char_sin, char_lock;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,79 +38,24 @@ public class CharacterActivity extends DrawerBaseActivity {
         setContentView(activityCharacterBinding.getRoot());
         allocateActivityTitle("Character");
 
-        CircleImageView char_kam = (CircleImageView) findViewById(R.id.char1);
-        CircleImageView char_sin = (CircleImageView) findViewById(R.id.char2);
-        CircleImageView char_lock = (CircleImageView) findViewById(R.id.char4);
+        char_kam = (CircleImageView) findViewById(R.id.char1);
+        char_sin = (CircleImageView) findViewById(R.id.char2);
+        char_lock = (CircleImageView) findViewById(R.id.char4);
 
-        dialog_characters = new Dialog(this);
-        char_kam.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                kamatis_Dialog();
-            }
-        });
-
-        char_sin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                singkamas_Dialog();
-            }
-        });
-
-        char_lock.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                charLocked_Dialog();
-        }
-        });
     }
 
-        private void kamatis_Dialog() {
-            dialog_characters.setContentView(R.layout.kamatis_dialog);
-            dialog_characters.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-            dialog_characters.show();
-            ImageView imageView2 = dialog_characters.findViewById(R.id.imageView2);
+    @Override
+    protected void onStart() {
+        super.onStart();
 
-            imageView2.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    dialog_characters.dismiss();
-                }
-            });
-            dialog_characters.show();
-        }
-    private void singkamas_Dialog() {
-        dialog_characters.setContentView(R.layout.singkamas_dialog);
-        dialog_characters.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        dialog_characters.show();
-        ImageView imageView2 = dialog_characters.findViewById(R.id.imageView2);
+        GetRedyCharacterDialog kamatisDialog = new GetRedyCharacterDialog(CharacterActivity.this, AppCompatResources.getDrawable(CharacterActivity.this, R.drawable.kamatis));
+        kamatisDialog.setupDialog(getString(R.string.kamatis_title), getString(R.string.kamatis_description));
 
-        imageView2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dialog_characters.dismiss();
-            }
+
+        char_kam.setOnClickListener(view -> {
+            kamatisDialog.show();
         });
-        dialog_characters.show();
     }
-    private void charLocked_Dialog() {
-        dialog_characters.setContentView(R.layout.locked_char_dialog);
-        dialog_characters.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        dialog_characters.show();
-        ImageView imageView2 = dialog_characters.findViewById(R.id.imageView2);
-
-        imageView2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dialog_characters.dismiss();
-            }
-        });
-        dialog_characters.show();
-    }
-
 }
 
 

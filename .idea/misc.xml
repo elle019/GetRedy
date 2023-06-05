@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Comlab/AndroidStudioProjects/GetRedy/app/src/main/res/layout/dialog_getredy_character_template.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Comlab/AndroidStudioProjects/GetRedy/app/src/main/res/layout/dialog_getredy_template.xml" value="0.1796875" />
+        <entry key="..\:/Users/Comlab/AndroidStudioProjects/GetRedy/app/src/main/res/layout/kamatis_dialog.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />

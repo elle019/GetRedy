@@ -16,10 +16,14 @@
 
     <string name="dialog_title_text_placeholder">Dialog Title</string>
     <string name="dialog_content_text_placeholder">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet pellentesque orci, non commodo ipsum finibus. \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="dialog_content_text_character_placeholder">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet pellentesque orci, non commodo ipsum finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet pellentesque orci, non commodo ipsum finibus.</string>
     <string name="dialog_close_button_description">Dialog close button</string>
     <string name="dialog_yes_button_label">Yes</string>
     <string name="dialog_no_button_label">No</string>
 
     <string name="dialog_normal_mode_text">This mode does not use coins. \nYou have to finish a chapter to \nunlock characters. \n\nDo you wish to proceed?</string>
     <string name="dialog_story_mode_text">Just your ordinary timer. \nThis mode uses coins to \nunlock characters. \n\nDo you wish to proceed?</string>
+
+    <string name="kamatis_title">Kamatis</string>
+    <string name="kamatis_description">Kamatis is an optimistic fruit who is determined to help their siblings from their veggienappers.</string>
 </resources>

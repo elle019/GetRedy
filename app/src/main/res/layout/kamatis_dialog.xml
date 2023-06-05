@@ -42,36 +42,6 @@
             android:layout_gravity="center"
             android:src="@drawable/kamatis" />
 
-        <TextView
-            android:id="@+id/text_dialog_2"
-            android:layout_width="296dp"
-            android:layout_height="match_parent"
-            android:layout_marginTop="160dp"
-            android:gravity="center"
-            android:fontFamily="@font/amiko"
-            android:text="Kamatis is an optimistic fruit who is"
-            android:textColor="@color/black" />
-
-        <TextView
-            android:id="@+id/text_dialog_3"
-            android:layout_width="296dp"
-            android:layout_height="match_parent"
-            android:layout_marginTop="200dp"
-            android:gravity="center"
-            android:fontFamily="@font/amiko"
-            android:text="determined to help their siblings from"
-            android:textColor="@color/black" />
-        <TextView
-            android:id="@+id/text_dialog_4"
-            android:layout_width="296dp"
-            android:layout_height="match_parent"
-            android:layout_marginTop="250dp"
-            android:gravity="center"
-            android:fontFamily="@font/amiko"
-            android:text="the veggienappers."
-            android:textColor="@color/black"
-            android:paddingBottom="15dp"/>
-
     </androidx.cardview.widget.CardView>
 
 
