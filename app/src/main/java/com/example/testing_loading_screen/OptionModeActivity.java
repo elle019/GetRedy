@@ -55,4 +55,9 @@ public class OptionModeActivity extends AppCompatActivity {
 
         storyModeButton.setOnClickListener(view -> storyModeDialog.show());
     }
+
+    void openNormalMode() {
+        startActivity(new Intent(OptionModeActivity.this, MainActivity.class));
+        finish();
+    }
 }

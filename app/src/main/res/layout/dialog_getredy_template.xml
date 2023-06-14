@@ -48,7 +48,7 @@
             android:text="@string/dialog_content_text_placeholder"
             android:textColor="@color/black" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 

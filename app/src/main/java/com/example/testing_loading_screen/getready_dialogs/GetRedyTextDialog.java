@@ -39,10 +39,10 @@ public class GetRedyTextDialog implements IGetRedyDialog{
         dialogTitle.setText(titleText);
         dialogContentText.setText(contentText);
 
-
         closeDialogButton.setOnClickListener(view -> dismiss());
 
         cancelBtn.setOnClickListener(view -> dismiss());
+        submitBtn.setOnClickListener(view -> dismiss());
     }
 
     public void setOnSubmit(Callable<Void> onSubmit) {
