@@ -1,29 +1,121 @@
 <resources>
+    <!--APP NAME-->
     <string name="app_name">Get Red-y!</string>
 
+    <!--TITLE SCREEN-->
     <string name="tapAnywhereText">Tap Anywhere to Continue</string>
 
+    <!--NAVIGATION DRAWER-->
     <string name="menu_drawer_open">Drawer Open</string>
     <string name="menu_drawer_close">Drawer Close</string>
 
+    <!--TIMER CLICK-->
     <string name="startTimerButtonLabel">Red-y!</string>
     <string name="stopTimerButtonLabel">Stop</string>
 
+    <!--TIMER VALUE-->
     <string name="defaultTimerValue">5:00</string>
 
+    <!--LOGIN-->
     <string name="appSharedPrefFile">Get_Redy_SharedPref</string>
     <string name="sharedPrefIsLoggedInKey">isLoggedIn</string>
 
+    <!--DIALOG TEXT TEMPLATE-->
     <string name="dialog_title_text_placeholder">Dialog Title</string>
     <string name="dialog_content_text_placeholder">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet pellentesque orci, non commodo ipsum finibus. \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
-    <string name="dialog_content_text_character_placeholder">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet pellentesque orci, non commodo ipsum finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet pellentesque orci, non commodo ipsum finibus.</string>
     <string name="dialog_close_button_description">Dialog close button</string>
+
+    <!--DIALOG CHARACTER TEMPLATE-->
+    <string name="dialog_content_text_character_placeholder">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet pellentesque orci, non commodo ipsum finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet pellentesque orci, non commodo ipsum finibus.</string>
+
+    <!--MODE OPTION, DIALOG TEXT TEMPLATE-->
+    <string name="dialog_story_mode_text">This mode does not use coins. \nYou have to finish a chapter to \nunlock characters. \n\nDo you wish to proceed?</string>
+    <string name="dialog_normal_mode_text">Just your ordinary timer. \nThis mode uses coins to \nunlock characters. \n\nDo you wish to proceed?</string>
     <string name="dialog_yes_button_label">Yes</string>
     <string name="dialog_no_button_label">No</string>
 
-    <string name="dialog_normal_mode_text">This mode does not use coins. \nYou have to finish a chapter to \nunlock characters. \n\nDo you wish to proceed?</string>
-    <string name="dialog_story_mode_text">Just your ordinary timer. \nThis mode uses coins to \nunlock characters. \n\nDo you wish to proceed?</string>
+    <!--TIMER DIALOGS-->
+    <string name="open_alert_dialog_congrats_title">Congratulations\!</string>
+    <string name="open_alert_dialog_content">Please set a time before starting the timer.</string>
+    <string name="cancel_alert_dialog_title">You\'re quitting?</string>
+    <string name="cancel_alert_dialog_content">oh.. okay..byebye then...</string>
 
+    <!--CHARACTER DESCRIPTIONS IN CHARACTER DRAWER-->
+
+    <!--LOCKED CHARACTER TEXT TEMPLATE-->
+    <string name="locked_title">Locked</string>
+    <string name="locked_description">Character is not yet playable. Must reach chapter 4 to unlock.</string>
+
+    <!--CHARACTER: SINGKAMAS, CHARACTER TEXT TEMPLATE-->
+    <string name="singkamas_title">Singkamas</string>
+    <string name="singkamas_description">Singkamas has an anxious nature. He is an overthinker and a people pleaser. He will go to great lengths to save his siblings to the point of neglecting his self.</string>
+
+    <!--CHARACTER: TALONG, CHARACTER TEXT TEMPLATE-->
+    <string name="talong_title">Talong</string>
+    <string name="talong_description">Talong is a vain and flashy dude who loves to admire himself. Bataw hates him with a passion.</string>
+
+    <!--CHARACTER: SIGARILYAS, CHARACTER TEXT TEMPLATE-->
+    <string name="sigarilyas_title">Sigarilyas</string>
+    <string name="sigarilyas_description">Sigarilyas is always daydreaming, resulting to being inattentive to her surroundings. She is good friends with Mustasa due to both of their nature being a common denominator.</string>
+
+    <!--CHARACTER: MANI, CHARACTER TEXT TEMPLATE-->
+    <string name="mani_title">Mani</string>
+    <string name="mani_description">Mani is a voracious reader. He\'s a book-smart and loves to prattle about almost anything. He doesn\'t like it when someone returns his books in an awful state.</string>
+
+    <!--CHARACTER: SITAW, CHARACTER TEXT TEMPLATE-->
+    <string name="sitaw_title">Sitaw</string>
+    <string name="sitaw_description">Sitaw may look athletic but he\'s not. He tries to play basketball because the veggies say that he is tall so he should play it. Unfortunately, he sucks at it.</string>
+
+    <!--CHARACTER: BATAW, CHARACTER TEXT TEMPLATE-->
+    <string name="bataw_title">Bataw</string>
+    <string name="bataw_description">Bataw is cranky individual who gets annoyed at everything. Patola says it is because he has insomnia and can\'t sleep properly.</string>
+
+    <!--CHARACTER: PATANI, CHARACTER TEXT TEMPLATE-->
+    <string name="patani_title">Patani</string>
+    <string name="patani_description">Patani is a pair of mischievous twins. Everything is a game to them thus, they are oblivious to dangers that may harm them.</string>
+
+    <!--CHARACTER: KUNDOL, CHARACTER TEXT TEMPLATE-->
+    <string name="kundol_title">Kundol</string>
+    <string name="kundol_description">Kundol gets cold easily. Because of this, he wears a scarf despite of the hot weather. He is very sweet and friendly.</string>
+
+    <!--CHARACTER: PATOLA, CHARACTER TEXT TEMPLATE-->
+    <string name="patola_title">Patola</string>
+    <string name="patola_description">Patola is a beauty queen who is very intelligent and charming. She has a very big heart and a pleasant personality.</string>
+
+    <!--CHARACTER: UPO, CHARACTER TEXT TEMPLATE-->
+    <string name="upo_title">Upo</string>
+    <string name="upo_description">Upo is a glutton. He likes to eat junk foods. He is quite a messy eater.</string>
+
+    <!--CHARACTER: KALABASA, CHARACTER TEXT TEMPLATE-->
+    <string name="kalabasa_title">Kalabasa</string>
+    <string name="kalabasa_description">Kalabasa may be frightening to look at but he is an absolute sweetheart. Kalabasa is a gentle giant that is scared of anything smaller than him because he says they are too fragile.</string>
+
+    <!--CHARACTER: LABANOS, CHARACTER TEXT TEMPLATE-->
+    <string name="labanos_title">Labanos</string>
+    <string name="labanos_description"> Labanos suffers from identity crisis, that is why he tries to copy Carrot to have a personality. He says he feels empty, which is evident in his emotionless face. </string>
+
+    <!--CHARACTER: MUSTASA, CHARACTER TEXT TEMPLATE-->
+    <string name="mustasa_title">Mustasa</string>
+    <string name="mustasa_description">Mustasa has an amazing ability to sleep anywhere. He is a heavy sleeper and spends most of his time sleeping.If he is awake, he is inattentive of his surroundings.</string>
+
+    <!--CHARACTER: SIBUYAS, CHARACTER TEXT TEMPLATE-->
+    <string name="sibuyas_title">Sibuyas</string>
+    <string name="sibuyas_description">Sibuyas is a scaredy-cat who cries at anything. A crybaby who is quite annoying.</string>
+
+    <!--CHARACTER: KAMATIS, CHARACTER TEXT TEMPLATE-->
     <string name="kamatis_title">Kamatis</string>
     <string name="kamatis_description">Kamatis is an optimistic fruit who is determined to help their siblings from their veggienappers.</string>
+
+    <!--CHARACTER: BAWANG, CHARACTER TEXT TEMPLATE-->
+    <string name="bawang_title">Bawang</string>
+    <string name="bawang_description">Bawang is an abwang hunter. He still have visible scars from his battles. He has a stingray whip, bolo and salt to destroy the evil abwangs. </string>
+
+    <!--CHARACTER: LUYA, CHARACTER TEXT TEMPLATE-->
+    <string name="luya_title">Luya</string>
+    <string name="luya_description">Luya is an albularyo. Whenever someone is injured or sick, they go to Luya for treatment. Not all of his treatments work though.</string>
+
+    <!--CHARACTER: LINGA, CHARACTER TEXT TEMPLATE-->
+    <string name="linga_title">Linga</string>
+    <string name="linga_description">Linga is a hostile little guy. He likes to pick fights to even someone bigger than him.</string>
+
 </resources>
