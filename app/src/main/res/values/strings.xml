@@ -19,6 +19,7 @@
     <!--LOGIN-->
     <string name="appSharedPrefFile">Get_Redy_SharedPref</string>
     <string name="sharedPrefIsLoggedInKey">isLoggedIn</string>
+    <string name="sharedPrefIsNormalModeKey">isNormalMode</string>
 
     <!--DIALOG TEXT TEMPLATE-->
     <string name="dialog_title_text_placeholder">Dialog Title</string>

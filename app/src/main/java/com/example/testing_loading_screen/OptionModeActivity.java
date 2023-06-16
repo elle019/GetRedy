@@ -3,7 +3,9 @@ package com.example.testing_loading_screen;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
@@ -31,6 +33,11 @@ public class OptionModeActivity extends AppCompatActivity {
         normalModeDialog = new GetRedyTextDialog(OptionModeActivity.this);
         normalModeDialog.setupDialog("Normal Mode", getString(R.string.dialog_normal_mode_text));
         normalModeDialog.setOnSubmit(() -> {
+            SharedPreferences sharedPref = getSharedPreferences(getString(R.string.appSharedPrefFile), Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedPref.edit();
+            editor.putBoolean(getString(R.string.sharedPrefIsNormalModeKey), true);
+            editor.apply();
+
             startActivity(new Intent(OptionModeActivity.this, MainActivity.class));
             finish();
 
@@ -40,6 +47,11 @@ public class OptionModeActivity extends AppCompatActivity {
         storyModeDialog = new GetRedyTextDialog(OptionModeActivity.this);
         storyModeDialog.setupDialog("Story Mode", getString(R.string.dialog_story_mode_text));
         storyModeDialog.setOnSubmit(() -> {
+            SharedPreferences sharedPref = getSharedPreferences(getString(R.string.appSharedPrefFile), Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedPref.edit();
+            editor.putBoolean(getString(R.string.sharedPrefIsNormalModeKey), false);
+            editor.apply();
+
             startActivity(new Intent(OptionModeActivity.this, MainActivity.class));
             finish();
 

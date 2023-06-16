@@ -4,11 +4,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.RelativeLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.testing_loading_screen.database_manager.DatabaseManager;
 
 public class TitleScreenActivity extends AppCompatActivity {
 
@@ -29,6 +32,10 @@ public class TitleScreenActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+
+        try (DatabaseManager db = new DatabaseManager(getApplicationContext())) {
+            db.addAccumulatedTime(10);
+        }
 
         title_screen_layout.setOnClickListener(v -> {
             SharedPreferences sharedPref = getSharedPreferences(getString(R.string.appSharedPrefFile), Context.MODE_PRIVATE);
